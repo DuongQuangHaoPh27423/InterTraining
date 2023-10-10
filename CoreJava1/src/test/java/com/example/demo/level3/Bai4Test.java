@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Bai4Test {
@@ -11,14 +12,14 @@ public class Bai4Test {
     @Test
     void testInput1() {
         List<String> strings = new ArrayList<>();
-        strings.add("ABCD");
-        strings.add("ACDF");
-        strings.add("EFGH");
-        strings.add("IJKL");
+        strings.add("abcd");
+        strings.add("acdf");
+        strings.add("efgh");
+        strings.add("ijkl");
 
-        String[] expected = {"ABCD", "ACDF"};
+        String[] expected = {"abcd", "acdf"};
         String[] actual = Bai4.findLargestOverlap(strings);
-
-        Assertions.assertEquals(expected, actual);
+//        sửa  expected->  Arrays.toString(expected)
+        Assertions.assertEquals(Arrays.toString(expected), Arrays.toString(actual));
     }
 }

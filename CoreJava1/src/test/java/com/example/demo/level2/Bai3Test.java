@@ -12,9 +12,10 @@ public class Bai3Test {
 
     @Test
     void testInput() {
-        List<String> listInput = new ArrayList<>(Arrays.asList("abcdef", "cdef"));
-        String[] expectResult = {"cdef"};
-        String[] actualResult = bai3.timChuoiTrungLapLonNhat(listInput);
-        Assertions.assertEquals(expectResult, actualResult);
+        String input1 = "abcdef";
+        String input2 = "cdef";
+        String expect = "cdef";
+        String actual = bai3.timChuoiTrungLapLonNhat(input1, input2);
+        Assertions.assertEquals(expect,actual);
     }
 }

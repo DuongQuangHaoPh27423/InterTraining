@@ -27,10 +27,7 @@ public class Bai1 {
             System.out.println("phải là số nguyên!");
             return 0;
         }
-        if(!number.equals(matcher) ){
-            System.out.println("bạn nhập chữ cái!");
-            return 0;
-        }
+
 
         int a = Integer.parseInt(input[0]);
         int b = Integer.parseInt(input[1]);

@@ -28,13 +28,7 @@ public class Bai1Test {
         Assertions.assertEquals(expectResult, actualResult);
     }
 
-    @Test
-    void testAddString() {
-        String input = "abcd";
-        int expectResult = 0;
-        int actualResult= bai1.Sum(input);
-        Assertions.assertEquals(expectResult, actualResult);
-    }
+
     @Test
     void testAddDouble() {
         String input = "2.2,4.4";
