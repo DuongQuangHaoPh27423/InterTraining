@@ -4,6 +4,9 @@ import java.util.List;
 
 public class Bai2 {
     public String findLongWord(List<String> list) {
+        if (list == null) {
+            return null;
+        }
         String longestWord = "";
         for (String word : list
         ) {

@@ -13,13 +13,13 @@ public class Bai9 {
             return 0;
         }
 
-        int n = nums.length;  // Lấy độ dài của mảng đầu vào
+        int n = nums.length;
         int[] dp = new int[n];  // Tạo một mảng để lưu độ dài của dãy con tại mỗi vị trí
         Arrays.fill(dp, 1);  // Khởi tạo độ dài tối thiểu cho mỗi vị trí là 1 (độ dài tối thiểu là 1, chính là chính nó)
 
         int doDaiMax = 1;  // Khởi tạo độ dài dãy con tăng dài nhất đã tìm được là 1
 
-        // Duyệt qua mảng đầu vào
+
         for (int i = 1; i < n; i++) {
             // Duyệt qua các phần tử trước đó để tìm độ dài dãy con tăng tối đa
             for (int j = 0; j < i; j++) {

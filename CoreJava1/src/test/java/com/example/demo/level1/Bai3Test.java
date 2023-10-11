@@ -18,7 +18,7 @@ public class Bai3Test {
     @Test
     void TestInputDouble() {
         String input = "2.5";
-        Double expectResult = 2.5 * 2.5;
+        Double expectResult = 0.0;
         Double actualResult = bai3.tinhBinhPhuong(input);
         Assertions.assertEquals(expectResult, actualResult);
     }

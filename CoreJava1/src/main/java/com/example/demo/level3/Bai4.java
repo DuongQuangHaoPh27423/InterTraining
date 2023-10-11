@@ -31,13 +31,12 @@ public class Bai4 {
 
     private static int computeOverlap(String str1, String str2) {
         int maxOverlap = 0;
-        int len1 = str1.length();
-        int len2 = str2.length();
+        int length1 = str1.length();
+        int length2 = str2.length();
 
-        // Check for overlap starting from the beginning of str1
-        for (int i = 0; i < len1; i++) {
+        for (int i = 0; i < length1; i++) {
             int overlap = 0;
-            for (int j = 0; i + j < len1 && j < len2; j++) {
+            for (int j = 0; i + j < length1 && j < length2; j++) {
                 if (str1.charAt(i + j) == str2.charAt(j))
                     overlap++;
                 else

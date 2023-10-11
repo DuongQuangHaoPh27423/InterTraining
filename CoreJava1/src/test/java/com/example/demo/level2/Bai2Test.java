@@ -43,7 +43,7 @@ public class Bai2Test {
     @Test
     void testInputNumber() {
         List<String> listInput = new ArrayList<>(Arrays.asList("Hao", "Quang5", "Hao", "Duong Quang Hao"));
-        String expectResult = "Quang5";
+        String expectResult = "Duong Quang Hao";
         String actualResult = bai2.findLongWord(listInput);
         Assertions.assertEquals(expectResult, actualResult);
     }
@@ -51,7 +51,7 @@ public class Bai2Test {
     @Test
     void testInputKytu() {
         List<String> listInput = new ArrayList<>(Arrays.asList("Hao", "Quang!", "Hao", "Duong Quang Hao"));
-        String expectResult = "Quang!";
+        String expectResult = "Duong Quang Hao";
         String actualResult = bai2.findLongWord(listInput);
         Assertions.assertEquals(expectResult, actualResult);
     }

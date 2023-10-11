@@ -7,7 +7,7 @@ import java.util.List;
 public class Bai7 {
     List<String> arrange(List<String> listInput) {
         Collections.sort(listInput, Comparator.comparing((String s) -> s.split(" ").length)
-                .reversed()
+                .reversed()//nguoc lai sx giam dan
                 .thenComparing(Comparator.comparingInt(String::length).reversed()));
         return listInput;
     }

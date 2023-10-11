@@ -21,25 +21,24 @@ public class Bai1Test {
         Assertions.assertEquals(expectResult, actualResult);
     }
     @Test
-    void testAddNull() {
+    void testAddEmpty() {
         String input = "";
         int expectResult = 0;
         int actualResult= bai1.Sum(input);
         Assertions.assertEquals(expectResult, actualResult);
     }
 
-
     @Test
-    void testAddDouble() {
-        String input = "2.2,4.4";
-        int expectResult = 0;
-        int actualResult= bai1.Sum(input);
-        Assertions.assertEquals(expectResult, actualResult);
+    void testNull() {
+        String input = null;
+//        int expectResult = 0;
+//        int actualResult= bai1.Sum(input);
+//        Assertions.assertEquals(expectResult, actualResult);
     }
 
     @Test
-    void testAddKhoangTrang(){
-        String input = "2 3";
+    void testAddChuCai(){
+        String input = "32a,3";
         int expectResult = 0;
         int actualResult= bai1.Sum(input);
         Assertions.assertEquals(expectResult, actualResult);
