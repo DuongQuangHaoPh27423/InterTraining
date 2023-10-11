@@ -44,6 +44,7 @@ public class Bai10 {
                 }
             } else {
                 System.out.println("Điểm>0 và <=10");
+                return 0;
             }
         }
         return count;

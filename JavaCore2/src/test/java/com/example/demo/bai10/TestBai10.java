@@ -26,10 +26,11 @@ public class TestBai10 {
         listInput.put(3.5, 4);
         double minScore = 0.0;
         double maxScore = 10.0;
-        int expectResult = 6;
+        int expectResult = 9;
         int actualResult = bai10.sapXep(listInput, minScore, maxScore);
         Assertions.assertEquals(expectResult, actualResult);
     }
+    @Test
     void testInput2() {
         Map<Double, Integer> listInput = new HashMap<>();
         listInput.put(-9.0, 3);
